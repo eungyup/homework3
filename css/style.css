@@ -1,0 +1,145 @@
+/*STARTER CODE*/
+
+/*
+We have started some of the selectors for you.
+For others we have provided hints on what the selectors should be.
+There are some missing selectors.
+
+Make sure to learn what the starter code does!!
+*/
+
+body{
+  color: black;
+  font-family: "Andika", sans-serif;
+  font-size: 16px;
+  margin: 1.2em;
+  background-size: cover;
+  background-position: center;
+  background-color: #DDDDDD;
+  background-image: url(../images/pigeon-background.jpeg);
+  background-repeat: no-repeat;
+}
+
+main{
+  margin-bottom: 100px;
+}
+
+h1{
+  color: #8000FF;
+  font-size: 2em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+caption{
+  margin:5px 0px;
+}
+
+p{
+  /* (Requirement) Paragraph text should be black, 16px, with 10px of padding on the top only*/
+  color: black;
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+a{
+  /* (Requirement)
+  Links should be 16px, dark red (#C12258, #B21F50, or #B92751), with a wavy underline. 
+  Choose the color that passes the Wave color contrast checker.*/
+  font-size: 16px;
+  color: #B21F50;
+  text-decoration-style: wavy;
+}
+
+table{
+  /*
+  (Requirement)
+    1. Should be centered on a large screen
+		2. Should have a specialized border with:
+			1. 2px black border around the exterior
+      2. 15px radius rounded exterior corners
+  */
+  border: 2px solid black;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-radius: 15px;
+}
+
+.colhead{
+  /*
+  (Requirement)
+  Column headers are always at least 100px wide, with 10px of padding.
+  Column header text is white, centered, and uppercase with a dark red background (#7e0820).
+  */
+  background-color: #7e0820;
+  color: white;
+  min-width: 100px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.rowhead{
+  /*
+  (Requirement)
+  Row headers have a 2px black border that matches the rest of the rows.
+  */
+  border-top: 2px solid black;
+}
+
+td{
+  /*
+  (Requirement)
+  Table cells have centered text with a 2px black border on only one side (the top), and 15px padding on all sides.
+  */
+  padding: 15px;
+  text-align: center;
+  border-top: 2px solid black;
+}
+
+tr:nth-child(odd){
+  /*
+  (Requirement)
+  Every odd numbered table row has a grey background (#D1D1D1), every even table row has a transparent background.
+  */
+  background-color: #D1D1D1;
+}
+
+tr:hover{
+  background-color: rgba(126, 8, 32, 0.5);
+}
+
+*:focus{
+  border: 2px solid black;
+}
+
+thead tr:first-child th:first-child{ 
+  border-radius: 15px 0 0 0;
+}
+
+thead tr:first-child th:last-child{ 
+  border-radius: 0 15px 0 0;
+}
+
+tbody tr:last-child th:first-child{ 
+  border-radius: 0 0 0 15px;
+}
+
+tbody tr:last-child td:last-child{ 
+  border-radius: 0 0 15px 0;
+}
+
+footer{
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  background:black;
+  text-align:center;
+  color: white;
+  min-height: 60px;
+}
+
+footer p{
+  color: white;
+}
